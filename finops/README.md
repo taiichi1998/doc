@@ -6,8 +6,8 @@ Azure中心のFinOps基盤に関する要件・設計ドキュメントです。
 
 | No. | ドキュメント | ステータス | 内容 |
 |---|---|---|---|
-| 1 | [全体要件・前提](./01-overall-requirements.md) | ほぼ完了 | 対象範囲、基盤、データ取得、保持、タグ、RG負担ルール、アクセス |
-| 2 | [機能要件](./02-functional-requirements.md) | ほぼ完了 | コスト分析、削減候補、配賦、Forecast、シミュレーション、タグ品質等 |
+| 1 | [全体要件・前提](./01-overall-requirements.md) | 完了 | 対象範囲、基盤、データ取得、保持、タグ、RG負担ルール、アクセス |
+| 2 | [機能要件](./02-functional-requirements.md) | 完了 | コスト分析、削減候補、配賦、Forecast、シミュレーション、タグ品質等 |
 | 3 | [画面・運用要件](./03-screen-operation-requirements.md) | 未完了 | Power BIページ構成、各画面詳細、更新・運用 |
 
 ## 現在の構成
@@ -30,13 +30,31 @@ Azure中心のFinOps基盤に関する要件・設計ドキュメントです。
 - 部門管理RG内の全Azureリソースを対象
 - 将来：GitHub / GitHub Copilot / Azure DevOps費用を統合
 
-### データ更新
+### データ更新・保持
 
 - Cost Management Export：日次
 - Power BI：日次更新 + 必要時手動更新
 - Azure価格データ：週1回
 - データ保持：3年
-- 直近6か月Hot、以降Cool、さらに古いデータはColdを検討
+- 0〜6か月：Hot
+- 6か月超〜1年：Cool
+- 1年超〜3年：Cold
+- 3年経過後：削除
+- Lifecycle Management：Bicepで管理
+
+### 将来コスト統合
+
+- GitHub / GitHub Copilot / Azure DevOps費用はMicrosoft Cost Managementで取得可能な範囲を優先
+- 不足分のみ各サービスのAPI等で補完
+- Invoiceは初期はCost Managementで確認し、将来Power BIへ主要情報のみ統合
+
+### 削減・分析ロジック
+
+- 未使用・低利用リソース：Azure Advisorを基本判定とし、必要な場合のみ独自ルールを追加
+- Reservation / Savings Plan：Microsoft推奨値を基本に1年・3年の削減額・削減率を比較
+- Forecast：Azure Cost Management標準Forecastを利用
+- 予算超過原因分析：前月比を基本とし、前日比 / 前週比へ切替可能
+- 変更前後比較：Azure Activity Logから変更日時を取得し、手動指定も可能
 
 ### RG社内負担ルール
 
@@ -59,7 +77,7 @@ Azure中心のFinOps基盤に関する要件・設計ドキュメントです。
 
 ## 完了状況
 
-### 完了 / ほぼ完了
+### 完了
 
 - [x] FinOps対象範囲
 - [x] 基盤構成
@@ -67,22 +85,25 @@ Azure中心のFinOps基盤に関する要件・設計ドキュメントです。
 - [x] Cost Management Export日次更新
 - [x] Power BI日次更新方針
 - [x] データ保持期間3年
+- [x] Hot / Cool / Cold移行タイミング
+- [x] Lifecycle ManagementをBicepで管理
 - [x] RG + Tagによる配賦方針
 - [x] Ownerの扱い
 - [x] タグ品質機能の大枠
-- [x] 削減候補の大枠
-- [x] Reservation / Savings Planを長期利用割引候補として統合
+- [x] 未使用・低利用リソースの判定方針
+- [x] Reservation / Savings Plan比較ロジック
 - [x] コストシミュレーション対象（SKU変更 + 新規リソース）
 - [x] Retail Prices API → Storage → Power BI方針
-- [x] 予算超過原因分析の粒度
-- [x] 変更前後比較の粒度
-- [x] Forecastの分析粒度
+- [x] 予算超過原因分析の粒度・比較期間
+- [x] 変更前後比較の粒度・変更日時取得方式
+- [x] Forecastの分析粒度・計算方式
 - [x] 経営向けサマリーの主要項目
 - [x] RG月20万円社内負担ルール
 - [x] 独自異常検知の初期要件からの削除
 - [x] 独自異常通知の初期要件からの削除
 - [x] Unit Costの初期対象外化
-- [x] Invoice Power BI統合の将来機能化
+- [x] Invoice Power BI統合の将来方針
+- [x] GitHub / Copilot / Azure DevOps費用統合方針
 - [x] Power BIページ構成
 - [x] 部門内全RG閲覧方針
 - [x] 更新失敗時は前回成功データを表示 + 最終更新日時表示
@@ -96,12 +117,6 @@ Azure中心のFinOps基盤に関する要件・設計ドキュメントです。
 - [ ] コストシミュレーション画面の入力方式
 - [ ] 変更前後比較画面の詳細設計
 - [ ] 予算超過原因分析画面の詳細設計
-- [ ] 未使用・低利用リソースの具体的判定条件
-- [ ] Forecastの具体的計算方式
-- [ ] 変更日時の取得・連携方式
-- [ ] Storage Cold移行タイミングの最終決定
-- [ ] GitHub / Copilot / Azure DevOps費用統合方式
-- [ ] Invoice統合方式（将来）
 
 ## 次の作業
 
