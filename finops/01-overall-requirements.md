@@ -2,9 +2,9 @@
 
 ## ステータス
 
-**ほぼ完了**
+**完了**
 
-基本方針・対象範囲・データ更新・保持・アクセス方針まで確定済み。実装方式の細部は設計フェーズで確定する。
+基本方針・対象範囲・データ更新・保持・アクセス方針・将来統合方針まで確定済み。
 
 ## 1. 目的
 
@@ -65,17 +65,18 @@ Power BIは社内ライセンスを利用し、追加コストを極力抑える
 ## 5. データ保持
 
 - 保持期間：3年間
-- 直近データは高速アクセス可能な層に保持
-- 古いデータは低コスト層へ移行
+- 0〜6か月：Hot
+- 6か月超〜1年：Cool
+- 1年超〜3年：Cold
+- 3年経過後：削除
 
-### 現時点の方針
+Storage Lifecycle Managementで自動階層化・削除を行う。
 
-- 直近6か月：Hot
-- 6か月超：Cool
-- さらに古いデータ：Coldの利用を検討
-- 3年経過後に削除
+### Lifecycle Management管理方式
 
-Storage Lifecycle Managementによる自動階層化を前提とする。
+- Azure Portalでの手動設定を正としない
+- BicepでIaC管理する
+- 保持期間・階層移行条件をコードとして管理し、設定漏れや環境差分を防止する
 
 ## 6. タグ方針
 
@@ -145,7 +146,22 @@ Storage Lifecycle Managementによる自動階層化を前提とする。
 - レポート上に最終更新日時を必ず表示する
 - 初期要件では更新失敗専用の通知・エラー画面は必須としない
 
-## 10. 初期対象外・将来機能
+## 10. 将来コスト統合方針
+
+### GitHub / GitHub Copilot / Azure DevOps
+
+- Microsoft Cost Managementで取得可能な費用はCost Management側を優先して利用する
+- Cost Managementで取得できない費用・利用情報のみ、各サービスのAPI等で補完する
+- 補完データはStorageへ集約し、最終的にPower BIで分析可能とする
+- 初期リリースでは統合対象外とし、将来拡張とする
+
+### Invoice / 請求情報
+
+- 初期はAzure Cost Management側で確認する
+- 将来Power BIへ主要な請求情報のみ統合する
+- Invoice明細の全項目をPower BIへ複製することは初期方針としない
+
+## 11. 初期対象外・将来機能
 
 - Unit Cost
   - ユーザー数、案件数などCost Management外の業務データが必要になるため初期対象外
@@ -154,9 +170,17 @@ Storage Lifecycle Managementによる自動階層化を前提とする。
   - 将来的に主要請求情報をPower BIへ統合
 - GitHub / GitHub Copilot / Azure DevOpsコスト統合
 
-## 未完了事項
+## 確定事項
 
-- StorageのCold移行タイミングの最終決定
-- 実装時のStorage Lifecycle Management具体設定
-- GitHub / Copilot / Azure DevOpsコスト統合方式
-- 将来のInvoice統合方式
+- [x] FinOps対象範囲
+- [x] 基盤構成
+- [x] データ更新方式
+- [x] Storage保持期間3年
+- [x] Hot / Cool / Cold移行タイミング
+- [x] Lifecycle ManagementをBicepで管理
+- [x] タグ方針
+- [x] RG社内負担ルール
+- [x] アクセス方針
+- [x] 更新失敗時の表示方針
+- [x] GitHub / Copilot / Azure DevOps費用統合方針
+- [x] 将来のInvoice統合方針
