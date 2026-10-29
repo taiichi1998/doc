@@ -1,39 +1,57 @@
 # 資格別の受験費用・前提条件・言語・難易度（2026-10-29調査）
 
-> このページは[優先順位表](certification-roadmap.md)とは独立した詳細データ。優先順位順に並べています。**価格は1回分の試験料または明示した講座セット料**で、税・教材・再受験・更新費用は基本的に含みません。「要確認」は公式で現時点の確証が取れていない事項です。難易度の**偏差値は試験範囲・知識の広さ・設問形式を参考にした主観的な目安**であり、受験者データに基づく偏差値ではありません。前提資格や実務経験の要件は別列で評価し、試験難易度の数値に混ぜません。現時点では全28項目の数値を同一の標準化尺度で厳密に検証できておらず、順位の断定には利用できません。言語や実務経験によって体感難度は変わります。日本語版の学習教材と日本語試験は異なります。
+> このページは[優先順位表](certification-roadmap.md)とは独立した詳細データ。優先順位順に並べています。**価格は1回分の試験料または明示した講座セット料**で、税・教材・再受験・更新費用は基本的に含みません。「要確認」は公式で現時点の確証が取れていない事項です。**重要：以下は統計上の偏差値ではなく、試験範囲と形式を用いた「偏差値風の難易度帯」です。** 実受験者の同一母集団・標準偏差のデータがないため、本当の偏差値は算出不能。旧版の根拠薄弱な1点刻みスコアは撤回し、5〜7ポイント幅で表記しました。A=公式試験範囲・形式を確認、B=公式の範囲または資格種別を参照した概算、C=提供状況/仕様/体系の確認が不足するため**数値評価保留**。言語・実務経験による体感差があります。前提資格・実務経験は難易度に足さず別列で示します。言語や実務経験によって体感難度は変わります。日本語版の学習教材と日本語試験は異なります。
 
 ## 比較一覧（全28行・複数資格をまとめた行あり）
 
-| # | 試験・資格 | 受験料の目安 | 前提・追加取得条件 | 試験言語 | 推定偏差値 | 更新 | 内容・留意事項 |
+| # | 試験・資格 | 受験料の目安 | 前提・追加取得条件 | 試験言語 | 難易度帯（根拠） | 更新 | 内容・留意事項 |
 |---:|---|---|---|---|---:|---|---|
-| 1 | [AZ-305](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/az-305/) | ¥20,300 | AZ-104合格により取得するAzure Administrator Associate認定がExpert付与に必要 | 日本語 | 65 | Microsoft 1年更新 | Azure設計・ID・ネットワーク・BCDR |
-| 2 | [AZ-400](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/az-400/) | ¥20,300 | Azure Administrator Associate（AZ-104）またはAzure Developer Associate（AZ-204）のいずれか1認定がExpert付与に必要 | 日本語 | 63 | Microsoft 1年更新 | DevOps、CI/CD、セキュリティ |
-| 3 | [SC-100](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/sc-100/) | ¥20,300 | SC-300／SC-200／Cloud and AI Security Engineer Associateのいずれか1認定がExpert付与に必要（公式現行条件） | 日本語 | 65 | Microsoft 1年更新 | Zero Trust、セキュリティ設計 |
-| 4 | [AB-100](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/ab-100/) | ¥20,300 | 公式指定のAssociate認定1件（例：AI-103／PL-400／AI-300／AB-620ほか）がExpert付与に必要 | 日本語 | 63 | Microsoft 1年更新 | Agentic AI・統合設計 |
-| 5 | [AI-103](https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-103/) | 日本受験料金要確認（Microsoft同クラス目安¥20,300） | 資格の公式前提なし | 日本語 | 57 | Microsoft 1年更新 | Foundry / Python・AIアプリとエージェント |
-| 6 | [Claude Architect – Professional](https://anthropic-partners.skilljar.com/) | 要確認 | 公式の認定体系・一般受験条件を要再確認 | 要確認 | 70 | 要確認 | Claude / MCP / AI統制。未確認の資格名のため購入不可 |
-| 7 | [Terraform Associate (004)](https://docs.hashicorp.com/certifications/terraform-associate) | $70.50＋税 | 正式な資格前提なし | 英語 | 54 | 2年 | Terraform 1.12、IaC設計 |
-| 8 | [AWS Solutions Architect – Professional](https://aws.amazon.com/certification/certified-solutions-architect-professional/) | ¥40,000 | 資格前提なし（AWS設計実務推奨） | 日本語可否は試験ページ要確認 | 69 | 3年 | AWS大規模設計・移行・統合 |
-| 9 | [CKA](https://training.linuxfoundation.org/ja/certification/certified-kubernetes-administrator-cka/) | $445 | 資格前提なし | 日本語可 | 65 | 2年（要購入時確認） | Kubernetes運用実技 |
-| 10 | [PMP](https://www.pmi.org/certifications/project-management-pmp) | 会員/非会員価格変動：申込画面で確認 | 高卒の場合、過去10年以内の重複しないプロジェクトリード経験60か月＋所定のPM教育（通常35時間）など。受験申請審査あり | 日本語可（要確認） | 63 | 3年・PDU更新 | プロジェクトマネジメント |
-| 11 | [CISSP](https://www.isc2.org/register-for-exam/isc2-exam-pricing/isc2-exam-pricing-jp) | $749 | 8分野のうち2分野以上で通算5年の有給実務経験（条件付きで最大1年免除）；満たさなくても試験受験可、合格後Associate of ISC2 | 日本語・英語併記 | 74 | 3年・CPE/維持費 | 8ドメインの情報セキュリティ |
-| 12 | [CKS](https://training.linuxfoundation.org/ja/certification/certified-kubernetes-security-specialist/) | $445 | 有効なCKA認定が必要 | 日本語可 | 72 | 2年（要確認） | Kubernetesセキュリティ実技 |
-| 13 | [FinOps Certified Engineer](https://www.finops.org/training-certification/recommended/engineering/) | 試験単体$325／教材＋試験$500（外部2026年料金、購入画面要確認） | 資格の前提なし | 英語のみ | 57 | 再認定あり（有効期間は要確認） | 技術的なFinOps、配賦・最適化・FOCUS |
-| 14 | [FinOps Certified Professional](https://www.finops.org/training-certification/training-faqs/) | $1,999（外部参考価格・最新要確認）、前提資格費用別 | 登録: 有効なEngineerかPractitioner／受験: 有効なFOCUS Analyst・AI Value・Technology Value／Professional Contribution＋試験 | 英語のみ | 70 | 2年 | FinOps組織運営・経営価値・高度な統制 |
-| 15 | [GitHub Agentic AI Developer (GH-600)](https://resources.github.com/learn/certifications/) | 要確認 | 名称・試験実在・前提条件を公式再確認 | 要確認 | 57 | 要確認 | AI開発生産性 |
-| 16 | [Google Professional Agentic Architect](https://cloud.google.com/learn/certification) | 要確認 | 正式資格名と提供有無を公式再確認 | 要確認 | 64 | 要確認 | Google Cloudエージェント設計 |
-| 17 | [AWS Generative AI Developer – Professional](https://aws.amazon.com/certification/) | ¥40,000（Professional価格帯、正式区分要確認） | 資格前提なし（受験要件要再確認） | 要確認 | 70 | 3年（正式資格要確認） | Bedrockと生成AI実装 |
-| 18 | [NVIDIA Agentic AI Professional](https://www.nvidia.com/en-us/learn/certification/) | 要確認 | 正式資格名・提供条件要再確認 | 要確認 | 63 | 要確認 | AIエージェント技術 |
-| 19 | [TOGAF Enterprise Architecture](https://www.opengroup.org/certifications/togaf) | 試験・受験方式で変動：要見積 | Foundation→Practitionerの認定ルート等、選択方式を確認 | 英語中心（日本語要確認） | 64 | 方式次第 | エンタープライズアーキテクチャ |
-| 20 | [RHCE](https://www.redhat.com/en/services/certification/rhce) | 地域・試験方式で変動：要確認 | RHCE認定にはRHCSAが必要。EX294等の試験受験条件と認定付与条件は別に確認 | 英語中心（日本語要確認） | 72 | 3年（Red Hat規約確認） | RHEL、Ansible実技 |
-| 21 | [GitHub Copilot Certification](https://resources.github.com/learn/certifications/) | 要確認 | 資格前提の有無・現行試験体系を確認 | 要確認 | 49 | 要確認 | Copilot運用・開発支援 |
-| 22 | [Google Professional Cloud Architect](https://cloud.google.com/learn/certification/cloud-architect) | $200＋税（参考、最新要確認） | 資格前提なし、実務経験推奨 | 日本語可否要確認 | 67 | 2年（要確認） | GCPアーキテクチャ |
-| 23 | [AWS DevOps Engineer – Professional](https://aws.amazon.com/certification/certified-devops-engineer-professional/) | ¥40,000 | 資格前提なし、AWS運用実務推奨 | 日本語可否要確認 | 70 | 3年 | AWS DevOps・運用設計 |
-| 24 | [AWS Advanced Networking – Specialty / Security – Specialty](https://aws.amazon.com/certification/) | 各¥40,000（2資格なら合計¥80,000） | 資格前提なし、専門実務推奨 | 各試験ページで確認 | 69 | 各3年 | AWSネットワーク／セキュリティ |
-| 25 | [AWS Machine Learning Engineer – Associate](https://aws.amazon.com/certification/) | ¥20,000 | 資格前提なし | 日本語可否要確認 | 64 | 3年 | MLOps・機械学習運用 |
-| 26 | [AWS Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/) | ¥20,000 | 資格前提なし | 日本語可否要確認 | 55 | 3年 | AWS基礎アーキテクチャ |
-| 27 | [AWS Developer – Associate / CloudOps Engineer – Associate](https://aws.amazon.com/certification/) | 各¥20,000（2資格なら合計¥40,000） | 資格前提なし | 各試験ページで確認 | 56 | 各3年 | AWSアプリ開発／運用 |
-| 28 | [AWS AI Practitioner](https://aws.amazon.com/certification/) | ¥15,000 | 資格前提なし | 日本語可否要確認 | 46 | 3年 | AI/生成AI基礎 |
+| 1 | [AZ-305](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/az-305/) | ¥20,300 | AZ-104合格により取得するAzure Administrator Associate認定がExpert付与に必要 | 日本語 | 63–68 (B) | Microsoft 1年更新 | Azure設計・ID・ネットワーク・BCDR |
+| 2 | [AZ-400](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/az-400/) | ¥20,300 | Azure Administrator Associate（AZ-104）またはAzure Developer Associate（AZ-204）のいずれか1認定がExpert付与に必要 | 日本語 | 60–65 (B) | Microsoft 1年更新 | DevOps、CI/CD、セキュリティ |
+| 3 | [SC-100](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/sc-100/) | ¥20,300 | SC-300／SC-200／Cloud and AI Security Engineer Associateのいずれか1認定がExpert付与に必要（公式現行条件） | 日本語 | 64–69 (B) | Microsoft 1年更新 | Zero Trust、セキュリティ設計 |
+| 4 | [AB-100](https://learn.microsoft.com/ja-jp/credentials/certifications/exams/ab-100/) | ¥20,300 | 公式指定のAssociate認定1件（例：AI-103／PL-400／AI-300／AB-620ほか）がExpert付与に必要 | 日本語 | 61–67 (B) | Microsoft 1年更新 | Agentic AI・統合設計 |
+| 5 | [AI-103](https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-103/) | 日本受験料金要確認（Microsoft同クラス目安¥20,300） | 資格の公式前提なし | 日本語 | 55–61 (B) | Microsoft 1年更新 | Foundry / Python・AIアプリとエージェント |
+| 6 | [Claude Architect – Professional](https://anthropic-partners.skilljar.com/) | 要確認 | 公式の認定体系・一般受験条件を要再確認 | 要確認 | — (C) | 要確認 | Claude / MCP / AI統制。未確認の資格名のため購入不可 |
+| 7 | [Terraform Associate (004)](https://docs.hashicorp.com/certifications/terraform-associate) | $70.50＋税 | 正式な資格前提なし | 英語 | 48–54 (A) | 2年 | Terraform 1.12、IaC設計 |
+| 8 | [AWS Solutions Architect – Professional](https://aws.amazon.com/certification/certified-solutions-architect-professional/) | ¥40,000 | 資格前提なし（AWS設計実務推奨） | 日本語可否は試験ページ要確認 | 66–71 (A) | 3年 | AWS大規模設計・移行・統合 |
+| 9 | [CKA](https://training.linuxfoundation.org/ja/certification/certified-kubernetes-administrator-cka/) | $445 | 資格前提なし | 日本語可 | 62–69 (A) | 2年（要購入時確認） | Kubernetes運用実技 |
+| 10 | [PMP](https://www.pmi.org/certifications/project-management-pmp) | 会員/非会員価格変動：申込画面で確認 | 高卒の場合、過去10年以内の重複しないプロジェクトリード経験60か月＋所定のPM教育（通常35時間）など。受験申請審査あり | 日本語可（要確認） | 62–69 (A) | 3年・PDU更新 | プロジェクトマネジメント |
+| 11 | [CISSP](https://www.isc2.org/register-for-exam/isc2-exam-pricing/isc2-exam-pricing-jp) | $749 | 8分野のうち2分野以上で通算5年の有給実務経験（条件付きで最大1年免除）；満たさなくても試験受験可、合格後Associate of ISC2 | 日本語・英語併記 | 70–76 (A) | 3年・CPE/維持費 | 8ドメインの情報セキュリティ |
+| 12 | [CKS](https://training.linuxfoundation.org/ja/certification/certified-kubernetes-security-specialist/) | $445 | 有効なCKA認定が必要 | 日本語可 | 67–73 (A) | 2年（要確認） | Kubernetesセキュリティ実技 |
+| 13 | [FinOps Certified Engineer](https://www.finops.org/training-certification/recommended/engineering/) | 試験単体$325／教材＋試験$500（外部2026年料金、購入画面要確認） | 資格の前提なし | 英語のみ | 53–60 (B) | 再認定あり（有効期間は要確認） | 技術的なFinOps、配賦・最適化・FOCUS |
+| 14 | [FinOps Certified Professional](https://www.finops.org/training-certification/training-faqs/) | $1,999（外部参考価格・最新要確認）、前提資格費用別 | 登録: 有効なEngineerかPractitioner／受験: 有効なFOCUS Analyst・AI Value・Technology Value／Professional Contribution＋試験 | 英語のみ | — (C) | 2年 | FinOps組織運営・経営価値・高度な統制 |
+| 15 | [GitHub Agentic AI Developer (GH-600)](https://resources.github.com/learn/certifications/) | 要確認 | 名称・試験実在・前提条件を公式再確認 | 要確認 | — (C) | 要確認 | AI開発生産性 |
+| 16 | [Google Professional Agentic Architect](https://cloud.google.com/learn/certification) | 要確認 | 正式資格名と提供有無を公式再確認 | 要確認 | — (C) | 要確認 | Google Cloudエージェント設計 |
+| 17 | [AWS Generative AI Developer – Professional](https://aws.amazon.com/certification/) | ¥40,000（Professional価格帯、正式区分要確認） | 資格前提なし（受験要件要再確認） | 要確認 | — (C) | 3年（正式資格要確認） | Bedrockと生成AI実装 |
+| 18 | [NVIDIA Agentic AI Professional](https://www.nvidia.com/en-us/learn/certification/) | 要確認 | 正式資格名・提供条件要再確認 | 要確認 | — (C) | 要確認 | AIエージェント技術 |
+| 19 | [TOGAF Enterprise Architecture](https://www.opengroup.org/certifications/togaf) | 試験・受験方式で変動：要見積 | Foundation→Practitionerの認定ルート等、選択方式を確認 | 英語中心（日本語要確認） | 59–66 (B) | 方式次第 | エンタープライズアーキテクチャ |
+| 20 | [RHCE](https://www.redhat.com/en/services/certification/rhce) | 地域・試験方式で変動：要確認 | RHCE認定にはRHCSAが必要。EX294等の試験受験条件と認定付与条件は別に確認 | 英語中心（日本語要確認） | 66–73 (B) | 3年（Red Hat規約確認） | RHEL、Ansible実技 |
+| 21 | [GitHub Copilot Certification](https://resources.github.com/learn/certifications/) | 要確認 | 資格前提の有無・現行試験体系を確認 | 要確認 | — (C) | 要確認 | Copilot運用・開発支援 |
+| 22 | [Google Professional Cloud Architect](https://cloud.google.com/learn/certification/cloud-architect) | $200＋税（参考、最新要確認） | 資格前提なし、実務経験推奨 | 日本語可否要確認 | 63–69 (A) | 2年（要確認） | GCPアーキテクチャ |
+| 23 | [AWS DevOps Engineer – Professional](https://aws.amazon.com/certification/certified-devops-engineer-professional/) | ¥40,000 | 資格前提なし、AWS運用実務推奨 | 日本語可否要確認 | 65–71 (A) | 3年 | AWS DevOps・運用設計 |
+| 24 | [AWS Advanced Networking – Specialty / Security – Specialty](https://aws.amazon.com/certification/) | 各¥40,000（2資格なら合計¥80,000） | 資格前提なし、専門実務推奨 | 各試験ページで確認 | 67–73 (B) | 各3年 | AWSネットワーク／セキュリティ |
+| 25 | [AWS Machine Learning Engineer – Associate](https://aws.amazon.com/certification/) | ¥20,000 | 資格前提なし | 日本語可否要確認 | 58–65 (B) | 3年 | MLOps・機械学習運用 |
+| 26 | [AWS Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/) | ¥20,000 | 資格前提なし | 日本語可否要確認 | 52–59 (A) | 3年 | AWS基礎アーキテクチャ |
+| 27 | [AWS Developer – Associate / CloudOps Engineer – Associate](https://aws.amazon.com/certification/) | 各¥20,000（2資格なら合計¥40,000） | 資格前提なし | 各試験ページで確認 | 51–59 (B) | 各3年 | AWSアプリ開発／運用 |
+| 28 | [AWS AI Practitioner](https://aws.amazon.com/certification/) | ¥15,000 | 資格前提なし | 日本語可否要確認 | 45–51 (B) | 3年 | AI/生成AI基礎 |
+
+## 難易度再評価の方法（2026-10-29）
+- 比較対象: 一般的なIT実務経験者が**試験を1回で合格する**までの学習負荷。**「認定取得に要する実務年数」や年収・権威を試験難易度に混ぜない**。
+- 知識範囲（複数領域にまたがるか）、知識深度（トレードオフ・ケーススタディ）、試験形式（実技・適応型・複数選択）、必要となる製品固有の知識を総合判断。
+- 公式ソースで問題数と試験時間が確認できたものはそれを根拠にするが、それだけで合格率は推定しない。
+- 比較の中心: **CISSP 70–76**（8領域、CAT 100–150問/3h）、**AWS SAP 66–71**（75問/180分）、**CKS 67–73**（2h実技・CKA前提）、**CKA 62–69**（2h実技）、**Terraform Associate 48–54**（1h選択）。
+- 数値が出ている行も**公開データに基づく統計的偏差値ではない**ため、区間同士の2〜3ポイントの違いで優劣を断定しない。
+
+### 試験形式の一次資料
+- [AWS SAP公式：75問・180分](https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/)
+- [CISSP公式：8領域・100–150問・CAT](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline)
+- [CKA公式：2時間の実技](https://www.cncf.io/training/certification/cka/)
+- [CKA/CKS公式FAQ：2時間・合格点](https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks)
+- [PMP公式：180問・240分](https://www.pmi.org/certifications/project-management-pmp)
+- [AB-100公式スキルガイド](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
+- [AI-103公式スキルガイド](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
+- [Terraform Associate公式：1時間選択式](https://docs.hashicorp.com/certifications/terraform-associate)
+- [Google Professional Cloud Architect公式：ケーススタディあり](https://cloud.google.com/learn/certification/cloud-architect?hl=ja)
 
 ## FinOps Professionalの最小ルートと費用上の注意
 
