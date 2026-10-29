@@ -11,7 +11,7 @@
 - AZ-305・AZ-400も下の優先順位表に含める（学習・受験歴あり）。試験合格とExpert認定付与は異なるため、正式な取得ステータスはMicrosoft Learnで確認する。
 - AI-102: 旧候補。現行のAI-103との関係、廃止日を確認してから受験判断。
 
-## 推奨取得順位（全27項目・取得済みのものは復習またはスキップ）
+## 推奨取得順位（全28項目・取得済みのものは復習またはスキップ）
 | 順位 | 資格・試験 | 分野 | 推奨理由 / 注意点 |
 | ---: | --- | --- | --- |
 | 1 | **AZ-305 / Designing Microsoft Azure Infrastructure Solutions** | Azureアーキテクチャ | 既存の設計実務の中核。受験・認定状況は要確認。 |
@@ -26,27 +26,28 @@
 | 10 | **PMP (Project Management Professional)** | PM | PL/PO/PM兼務の経験を対外的に説明。受験に必要な実務年数・教育要件を確認。 |
 | 11 | **CISSP** | セキュリティ統括 | セキュリティアーキテクト・管理職志向。正式認定の実務経験要件に注意。 |
 | 12 | **CKS (Certified Kubernetes Security Specialist)** | Kubernetesセキュリティ | CKAを前提にランタイム・サプライチェーン防御を強化。 |
-| 13 | **FinOps Certified Practitioner** | クラウドコスト | 既存Power BI FinOps可視化・配賦・予算管理と相性がよい。 |
-| 14 | **GitHub Agentic AI Developer / GH-600（名称・提供状況要再確認）** | AI開発生産性 | GitHubとAIエージェントの開発プロセスに関係。正式な試験体系は確認してから登録。 |
-| 15 | **Google Cloud Professional Agentic Architect（正式名称・提供状況要再確認）** | AIアーキテクチャ | Azure以外のAgentic AI設計に拡張。公式の現行認定一覧で確認。 |
-| 16 | **AWS Generative AI Developer – Professional** | 生成AI開発 | Bedrockを含めたAWS側のAI実装を体系化。 |
-| 17 | **NVIDIA Agentic AI Professional（正式名称・提供状況要再確認）** | AIエージェント | モデル・推論・エージェント技術を広げる場合に。 |
-| 18 | **TOGAF Enterprise Architecture** | EA | 部門・企業横断の基準・標準化が主業務になった場合。 |
-| 19 | **RHCE** | Linux/自動化 | VM、コンテナ、運用自動化の深掘り。現時点では優先度低め。 |
-| 20 | **GitHub Copilot Certification（現行名称・体系要確認）** | 開発支援AI | 社内教育・AI開発標準化向け。Claude関連資格と学習重複あり。 |
-| 21 | **Google Cloud Professional Cloud Architect** | マルチクラウド | 第二クラウドをGoogle Cloudに定める場合に順位を引き上げる。 |
-| 22 | **AWS DevOps Engineer – Professional** | DevOps | AZ-400の成果をAWSで横展開する場合に。 |
-| 23 | **AWS Advanced Networking – Specialty / Security – Specialty** | NW/セキュリティ | AWSの本格的な構築運用が担当になった時に検討。 |
-| 24 | **AWS Machine Learning Engineer – Associate** | ML運用 | MLパイプラインを業務で実装する場合に。 |
-| 25 | **AWS Solutions Architect – Associate** | AWS基礎 | AWS SAPに直接挑戦しない場合の足場。 |
-| 26 | **AWS Developer – Associate / CloudOps Engineer – Associate** | AWS実装/運用 | AWSの開発・運用を担当する場合のみ。 |
-| 27 | **AWS AI Practitioner** | AI基礎 | 現状の実務経験では取得優先度は低い。 |
+| 13 | **FinOps Certified Engineer** | クラウドコスト | 既存Power BI FinOps基盤・コスト配賦・運用改善と相性がよい。Professionalの入口としてPractitionerとどちらか一方でよい。 |
+| 14 | **FinOps Certified Professional** | FinOps上級 | Engineer（またはPractitioner）＋FOCUS Analyst・AI Value・Technology Value＋Professional Contribution・試験。高額なので優先順位は費用対効果を見て調整。 |
+| 15 | **GitHub Agentic AI Developer / GH-600（名称・提供状況要再確認）** | AI開発生産性 | GitHubとAIエージェントの開発プロセスに関係。正式な試験体系は確認してから登録。 |
+| 16 | **Google Cloud Professional Agentic Architect（正式名称・提供状況要再確認）** | AIアーキテクチャ | Azure以外のAgentic AI設計に拡張。公式の現行認定一覧で確認。 |
+| 17 | **AWS Generative AI Developer – Professional** | 生成AI開発 | Bedrockを含めたAWS側のAI実装を体系化。 |
+| 18 | **NVIDIA Agentic AI Professional（正式名称・提供状況要再確認）** | AIエージェント | モデル・推論・エージェント技術を広げる場合に。 |
+| 19 | **TOGAF Enterprise Architecture** | EA | 部門・企業横断の基準・標準化が主業務になった場合。 |
+| 20 | **RHCE** | Linux/自動化 | VM、コンテナ、運用自動化の深掘り。現時点では優先度低め。 |
+| 21 | **GitHub Copilot Certification（現行名称・体系要確認）** | 開発支援AI | 社内教育・AI開発標準化向け。Claude関連資格と学習重複あり。 |
+| 22 | **Google Cloud Professional Cloud Architect** | マルチクラウド | 第二クラウドをGoogle Cloudに定める場合に順位を引き上げる。 |
+| 23 | **AWS DevOps Engineer – Professional** | DevOps | AZ-400の成果をAWSで横展開する場合に。 |
+| 24 | **AWS Advanced Networking – Specialty / Security – Specialty** | NW/セキュリティ | AWSの本格的な構築運用が担当になった時に検討。 |
+| 25 | **AWS Machine Learning Engineer – Associate** | ML運用 | MLパイプラインを業務で実装する場合に。 |
+| 26 | **AWS Solutions Architect – Associate** | AWS基礎 | AWS SAPに直接挑戦しない場合の足場。 |
+| 27 | **AWS Developer – Associate / CloudOps Engineer – Associate** | AWS実装/運用 | AWSの開発・運用を担当する場合のみ。 |
+| 28 | **AWS AI Practitioner** | AI基礎 | 現状の実務経験では取得優先度は低い。 |
 
 ## 受験順の推奨ルート
 1. **短期**: SC-100の学習を継続し、現在のMicrosoft認定ステータスを確認する。
 2. **AI集中ルート**: AI-103 → AB-100（資格取得条件を満たす）→ Claude Architect – Professional（提供・受験資格が確認できる場合）。
 3. **基盤拡張ルート**: Terraform Associate → AWS SAP（必要ならSAAから）→ CKA → CKS。
-4. **中長期**: PMP・CISSP・TOGAF、必要に応じてFinOps・マルチクラウド資格を追加。
+4. **中長期**: PMP・CISSP・TOGAF、必要に応じてFinOps・マルチクラウド資格を追加。FinOps Professionalは追加要件が多いため、Engineerのみで止める選択肢も残す。
 5. **並走する実績**: Claude Codeの権限・安全対策、評価/回帰テスト、トレース、コスト、SLO、障害復旧、監査証跡をコードと設計文書で残す。
 
 ## 学習範囲メモ
