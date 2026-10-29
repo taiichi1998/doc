@@ -1,7 +1,7 @@
 # AI・Claude Code
 
 ## Claude Code / 開発標準
-- [Claude Code標準テンプレート](../../README.md)
+- [Claude Code標準テンプレート](claude-code-standard-template.md)
 - [Claude Codeテンプレート構造](../../doc/claude-code-template-structure.md)
 - [Claude Code実行基盤](../../claude-code-execution-platform.md)
 - [機能開発設計](../../claude-code-feature-development-design.md)
