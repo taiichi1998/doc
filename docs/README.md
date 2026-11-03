@@ -13,6 +13,7 @@
 - [08 学習・資格・キャリア](learning/README.md)
 
 ## プロジェクト別
+- [AIスイングトレード自動売買 — 要件・設計・検証](projects/ai-swing-trading/README.md)
 - [FinOps 要件と実装](../finops/README.md)
 - [リソース作成の機能要件](resource-provisioning-functional-requirements.md)
 - [RPA運用AIエージェントPoC](rpa-ai-operations-agent-poc-design.md)
