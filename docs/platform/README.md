@@ -8,5 +8,6 @@
 - [Key Vaultのアクセス権 / AZ-305](../azure/key-vault-permissions-az305.md)
 
 ## プラットフォーム設計
+- [Azureリソース管理台帳・棚卸し基盤（設計ドラフト／方式未決定）](azure-resource-inventory-design-draft.md)
 - [リソース作成の機能要件](../resource-provisioning-functional-requirements.md)
 - [モバイルからVMへのアクセス](../mobile-to-vm.md)
