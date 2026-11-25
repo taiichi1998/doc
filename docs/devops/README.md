@@ -1,5 +1,6 @@
 # DevOps / CI・CD / 品質管理
 
+- [アジャイル業務アプリケーション開発標準](agile-development/agile-application-development-standard.md)
 - [Azure DevOps ワークフロー設計](../../azure-devops-workflow-design.md)
 - [Claude Codeの機能開発フロー](../../claude-code-feature-development-design.md)
 - [Claude Code AIレビュー](../claude-code-ai-review.md)
